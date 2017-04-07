@@ -1,0 +1,14 @@
+{
+  "name": "api-send-email",
+  "version": "1.0.0",
+  "description": "Serviço para envio de email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jean batista",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^4.0.0"
+  }
+}
