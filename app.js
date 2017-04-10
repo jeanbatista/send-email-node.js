@@ -48,7 +48,7 @@ function enviar(i){
     attachments: [{
         filename: 'teste.jpg',
         path: 'caminho-da-imagem',
-        cid: "igm-mail"
+        cid: "img-mail"
     }]
   }, function(err){
 
