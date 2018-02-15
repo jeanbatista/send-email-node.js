@@ -1,7 +1,7 @@
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
 // Configurações do transporte de email
-var transporte = nodemailer.createTransport({
+let transporte = nodemailer.createTransport({
   service: 'Nome do serviço',
   auth: {
     user: 'email',
@@ -10,22 +10,22 @@ var transporte = nodemailer.createTransport({
 });
 
 // Configurações default dos e-mails.
-var config = {
+let config = {
   remetente: 'remetente',
   assunto: 'Envio de email'
 };
 
 // Lista de e-mails para envio.
-var usuarios = [
+let usuarios = [
   {
     nome: 'nome destinatário',
     sobrenome: 'sobrenome destinatário',
     email: 'email do destinatário'
   },
   {
-      nome: 'segundo nome destinatário',
-      sobrenome: 'segundo sobrenome destinatário',
-      email: 'segundo email do destinatário'
+    nome: 'segundo nome destinatário',
+    sobrenome: 'segundo sobrenome destinatário',
+    email: 'segundo email do destinatário'
   }
 ];
 
@@ -34,7 +34,7 @@ var usuarios = [
  */
 function enviar(i){
     // Recupera usuário.
-  var usuario = usuarios[i];
+  let usuario = usuarios[i];
 
   // Verifica se array de usuários é válido.
   if(!usuario)
